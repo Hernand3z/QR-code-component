@@ -1,0 +1,76 @@
+/* Variables */
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --font-size-paragraph: 15px;
+    --font-family: 'Outfit', sans-serif;
+}
+
+/* Generales */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+/* Container */
+.view{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Light-gray);
+    padding: 50px 8px;
+    min-width: 280px;
+}
+
+.view .container{
+    background-color: var(--White);
+    padding: 16px 16px 35px 16px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 320px;
+    max-height: 550px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.view .container .container__imagen{
+    font-size: 0;
+}
+
+.view .container .container__imagen img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.view .container .container__descripcion{
+    padding: 0px 15px;
+}
+
+.view .container .container__descripcion h1{
+    color: var(--Dark-blue);
+    margin-top: 22px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.view .container .container__descripcion p{
+    margin-top: 18px;
+    font-weight: 400;
+    color: var(--Grayish-blue);
+    font-size: var(--font-size-paragraph);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
